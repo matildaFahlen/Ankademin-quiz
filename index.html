@@ -8,8 +8,12 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <h1>Quiz</h1>
-    <h3>Quizet består av 10 frågor. Alla frågor måste besvaras. Om du inte kan svaret - chansa.</h3>
+    <button onclick="darkMode()">Dark mode</button>
+    <button onclick="lightMode()">Light mode</button>
+    <div id="intro">
+        <h1 id="h1">Quiz</h1>
+        <h3>Quizet består av 10 frågor. Alla frågor måste besvaras. Om du inte kan svaret - chansa.</h3>
+    </div>
     <div id="questions">
         <h2>Fråga 1</h2>
         <label for="Sant">Sant</label>
@@ -72,9 +76,11 @@
         <input type="radio" name="question10" value="right">
     </div>
     <br>
-    <label for="submit">Varje rätt svar ger 1 poäng. För att få godkänt behöver du ha klarat minst 50% av frågorna.</label>
-    <br>
-    <button id="submit">Visa poäng</button>
-    <h2 id="finalScore"></h2>
+    <div id="getResult">
+        <label for="submit">Varje rätt svar ger 1 poäng. För att få godkänt behöver du ha klarat minst 50% av frågorna.</label>
+        <br>
+        <button id="submit">Visa poäng</button>
+        <h2 id="finalScore"></h2>
+    </div>
 </body>
 </html>
